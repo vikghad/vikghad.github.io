@@ -1,0 +1,37 @@
+<section id="experience">
+    <div class="container">
+        <h2 class="section-title">Experience</h2>
+
+        {% for job in site.data.cv.work %}
+        <div class="experience-item">
+            <header>
+                <h3>{{ job.company }}</h3>
+                <span class="time">
+                    {{ job.startDate | date: "%b %Y" }} -
+                    {% if job.endDate != "" and job.endDate != nil %}
+                    {% if job.endDate == "Present" %}Present{% else %}{{ job.endDate | date: "%b %Y" }}{% endif %}
+                    {% else %}
+                    Present
+                    {% endif %}
+                </span>
+            </header>
+            <div class="position">
+                {{ job.position }}
+                {% if job.website %}
+                <a href="{{ job.website }}" target="_blank" class="website"><i class="fas fa-external-link-alt"></i></a>
+                {% endif %}
+            </div>
+            <div class="summary">
+                <p>{{ job.summary }}</p>
+            </div>
+            {% if job.highlights %}
+            <ul class="highlights">
+                {% for highlight in job.highlights %}
+                <li>{{ highlight }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>

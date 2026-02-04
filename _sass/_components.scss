@@ -1,0 +1,123 @@
+/* Timeline & Experience Components */
+.experience-item,
+.education-item {
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    header {
+        padding: 0;
+        border: none;
+        margin-bottom: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0;
+        }
+
+        .time {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-family: var(--font-mono);
+        }
+    }
+
+    .position {
+        font-weight: 500;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .website {
+        font-size: 0.9rem;
+        margin-left: 0.5rem;
+        color: var(--text-muted);
+        font-weight: normal;
+    }
+
+    .summary {
+        color: var(--text-color);
+    }
+
+    .highlights {
+        margin-top: 0.5rem;
+        color: var(--text-muted);
+        font-size: 0.95rem;
+
+        li {
+            margin-bottom: 0.25rem;
+        }
+    }
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+        color: var(--text-color);
+    }
+
+    .skill-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .tag {
+        background-color: var(--bg-secondary);
+        padding: 0.25rem 0.75rem;
+        border-radius: 9999px; // Pill shape
+        font-size: 0.85rem;
+        color: var(--text-color);
+        border: 1px solid var(--border-color);
+    }
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+        stroke: var(--text-color);
+        fill: none;
+    }
+}

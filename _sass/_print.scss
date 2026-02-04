@@ -1,0 +1,57 @@
+@media print {
+
+    /* Hide non-printable elements */
+    .theme-toggle,
+    .social-links,
+    footer {
+        display: none !important;
+    }
+
+    body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .container {
+        width: 100%;
+        max-width: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Expand links if meaningful, but for a CV we usually want it to look clean */
+    /* a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8rem;
+  } */
+
+    section {
+        break-inside: avoid;
+        margin-bottom: 2rem;
+    }
+
+    /* Reset layout for print */
+    header .header-content {
+        flex-direction: row;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        color: #000000;
+    }
+
+    .tag {
+        border: 1px solid #ccc !important;
+        background: transparent !important;
+        color: #000 !important;
+    }
+}

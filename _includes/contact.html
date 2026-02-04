@@ -1,0 +1,16 @@
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p>Feel free to reach out to me for collaborations or just a friendly chat.</p>
+        <div class="contact-methods">
+            {% if site.data.cv.basics.email %}
+            <p><strong>Email:</strong> <a href="mailto:{{ site.data.cv.basics.email }}">{{ site.data.cv.basics.email
+                    }}</a></p>
+            {% endif %}
+            {% if site.data.cv.basics.phone %}
+            <p><strong>Phone:</strong> <a href="tel:{{ site.data.cv.basics.phone }}">{{ site.data.cv.basics.phone }}</a>
+            </p>
+            {% endif %}
+        </div>
+    </div>
+</section>

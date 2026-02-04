@@ -1,0 +1,42 @@
+<header>
+    <div class="container">
+        <div class="header-content">
+            {% if site.data.cv.basics.image %}
+            <img src="{{ site.data.cv.basics.image | relative_url }}" alt="{{ site.data.cv.basics.name }}"
+                class="profile-image">
+            {% endif %}
+
+            <div class="header-text">
+                <h1>{{ site.data.cv.basics.name }}</h1>
+                <div class="subtitle">{{ site.data.cv.basics.label }}</div>
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i> {{ site.data.cv.basics.location.city }}, {{
+                    site.data.cv.basics.location.region }}
+                </div>
+
+                <div class="social-links">
+                    {% if site.data.cv.basics.email %}
+                    <a href="mailto:{{ site.data.cv.basics.email }}" aria-label="Email"><i
+                            class="fas fa-envelope"></i></a>
+                    {% endif %}
+
+                    {% if site.data.cv.basics.phone %}
+                    <a href="tel:{{ site.data.cv.basics.phone }}" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    {% endif %}
+
+                    {% if site.data.cv.basics.url %}
+                    <a href="{{ site.data.cv.basics.url }}" target="_blank" rel="noopener noreferrer"
+                        aria-label="Website"><i class="fas fa-globe"></i></a>
+                    {% endif %}
+
+                    {% for profile in site.data.cv.basics.profiles %}
+                    <a href="{{ profile.url }}" target="_blank" rel="noopener noreferrer"
+                        aria-label="{{ profile.network }}">
+                        <i class="{{ profile.icon }}"></i>
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

@@ -1,0 +1,13 @@
+source "https://rubygems.org"
+
+gem "jekyll", "3.9.3"
+gem "minima", "~> 2.5"
+gem "jekyll-feed"
+gem "webrick"
+gem "connection_pool", "< 3.0"
+gem "drb", "< 2.1"
+gem "json", "< 2.7"
+gem "csv", "< 3.2"
+gem "net-http", "< 0.3"
+gem "public_suffix", "< 5.0"
+gem "ffi", "< 1.17"

@@ -1,0 +1,97 @@
+basics:
+  name: "Jane Doe"
+  label: "Senior Software Engineer"
+  image: "assets/images/profile.jpg"
+  email: "jane.doe@example.com"
+  phone: "(912) 555-4321"
+  url: "https://janedoe.com"
+  summary: "A passionate Software Engineer with 5+ years of experience in building scalable web applications and distributed systems. Expert in JavaScript, Python, and cloud technologies."
+  location:
+    city: "San Francisco"
+    region: "California"
+    countryCode: "US"
+  profiles:
+    - network: "LinkedIn"
+      username: "janedoe"
+      url: "https://linkedin.com/in/janedoe"
+      icon: "fab fa-linkedin"
+    - network: "GitHub"
+      username: "janedoe"
+      url: "https://github.com/janedoe"
+      icon: "fab fa-github"
+    - network: "Twitter"
+      username: "janedoe"
+      url: "https://twitter.com/janedoe"
+      icon: "fab fa-twitter"
+
+work:
+  - company: "Tech Solutions Inc."
+    position: "Senior Software Engineer"
+    website: "https://techsolutions.com"
+    startDate: "2021-01-01"
+    endDate: "Present"
+    summary: "Leading the frontend team in migrating legacy applications to React."
+    highlights:
+      - "Reduced load time by 40% through code splitting and lazy loading."
+      - "Mentored 3 junior developers and established code review best practices."
+      - "Architected a reusable component library used across 5 products."
+  - company: "WebCorp"
+    position: "Software Engineer"
+    website: "https://webcorp.com"
+    startDate: "2018-06-01"
+    endDate: "2020-12-31"
+    summary: "Full stack development using Node.js and MongoDB."
+    highlights:
+      - "Developed and maintained RESTful APIs serving 1M+ requests daily."
+      - "Implemented automated CI/CD pipelines reducing deployment time by 50%."
+
+education:
+  - institution: "University of Technology"
+    area: "Computer Science"
+    studyType: "Bachelor"
+    startDate: "2014-09-01"
+    endDate: "2018-05-30"
+    score: "3.8 GPA"
+    courses:
+      - "Data Structures & Algorithms"
+      - "Database Systems"
+      - "Operating Systems"
+
+skills:
+  - name: "Languages"
+    level: "Expert"
+    keywords:
+      - "JavaScript (ES6+)"
+      - "Python"
+      - "TypeScript"
+      - "HTML/CSS"
+  - name: "Frameworks"
+    level: "Advanced"
+    keywords:
+      - "React"
+      - "Next.js"
+      - "Node.js"
+      - "Django"
+  - name: "Tools"
+    level: "Intermediate"
+    keywords:
+      - "Docker"
+      - "AWS"
+      - "Git"
+      - "Webpack"
+
+languages:
+  - language: "English"
+    fluency: "Native Speaker"
+  - language: "Spanish"
+    fluency: "Intermediate"
+
+interests:
+  - name: "Open Source"
+    keywords:
+      - "Contributor"
+      - "Maintainer"
+  - name: "Photography"
+    keywords:
+      - "Landscape"
+      - "Travel"

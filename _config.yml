@@ -1,0 +1,35 @@
+title: "My Professional CV"
+email: email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  My professional resume and portfolio.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  username
+
+# Build settings
+markdown: kramdown
+theme: minima # Optional, we will likely use custom layout but this is a fallback
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - .sass-cache
+  - .jekyll-cache
+  - .git
+  - .gitignore
+  - README.md
+  - LICENSE
+  - app
+  - gradle
+  - .gradle
+  - gradlew
+  - gradlew.bat
+  - settings.gradle
+
+sass:
+  sass_dir: _sass

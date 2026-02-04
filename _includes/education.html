@@ -1,0 +1,28 @@
+<section id="education">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        {% for edu in site.data.cv.education %}
+        <div class="education-item">
+            <header>
+                <h3>{{ edu.institution }}</h3>
+                <span class="time">
+                    {{ edu.startDate | date: "%Y" }} -
+                    {% if edu.endDate != "" %}{{ edu.endDate | date: "%Y" }}{% else %}Present{% endif %}
+                </span>
+            </header>
+            <div class="position">{{ edu.studyType }} in {{ edu.area }}</div>
+            {% if edu.score %}
+            <div class="score">Score: {{ edu.score }}</div>
+            {% endif %}
+            {% if edu.courses %}
+            <ul class="highlights">
+                {% for course in edu.courses %}
+                <li>{{ course }}</li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</section>

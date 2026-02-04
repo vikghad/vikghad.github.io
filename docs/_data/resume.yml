@@ -1,0 +1,90 @@
+basics:
+  name: Vikram Ghadge
+  label: Senior Software Engineer
+  image: ""
+  email: vikram.ghadge@example.com
+  phone: "(912) 555-4321"
+  url: https://vikramghadge.github.io
+  summary: >
+    Experienced software engineer with a strong background in developing scalable web applications and mobile solutions.
+    Passionate about clean code, performance optimization, and learning new technologies.
+  location:
+    city: San Francisco
+    country: US
+    region: California
+  profiles:
+    - network: LinkedIn
+      username: vikramghadge
+      url: https://linkedin.com/in/vikramghadge
+    - network: GitHub
+      username: vikramghadge
+      url: https://github.com/vikramghadge
+
+work:
+  - company: Tech Innovators Inc.
+    position: Senior Software Engineer
+    website: https://techinnovators.com
+    startDate: "2021-01-01"
+    endDate: Present
+    summary: >
+      Leading the backend development team for the flagship product.
+    highlights:
+      - Architected and implemented a microservices-based backend using Java and Spring Boot.
+      - improved API response times by 40% through caching strategies and database optimization.
+      - Mentored junior developers and conducted code reviews.
+  - company: Creative Solutions LLC
+    position: Software Engineer
+    website: https://creativesolutions.com
+    startDate: "2018-05-01"
+    endDate: "2020-12-31"
+    summary: >
+      Full-stack development for various client projects.
+    highlights:
+      - Developed a responsive e-commerce platform using React and Node.js.
+      - Integrated third-party payment gateways and shipping APIs.
+      - Collaborated with designers to ensure pixel-perfect UI implementation.
+
+education:
+  - institution: University of Technology
+    area: Computer Science
+    studyType: Bachelor of Science
+    startDate: "2014-08-01"
+    endDate: "2018-05-01"
+    courses:
+      - Data Structures & Algorithms
+      - Database Systems
+      - Operating Systems
+
+skills:
+  - name: Languages
+    keywords:
+      - Java
+      - Kotlin
+      - Python
+      - JavaScript
+      - SQL
+  - name: Frameworks & Tools
+    keywords:
+      - Spring Boot
+      - React
+      - Android SDK
+      - Git
+      - Docker
+      - AWS
+
+projects:
+  - name: Weekly Planner App
+    description: >
+      A productivity application for planning weekly tasks and setting reminders.
+    keywords:
+      - Android
+      - Kotlin
+      - MVVM
+    url: https://github.com/vikramghadge/weekly-planner
+  - name: E-commerce Dashboard
+    description: >
+      Admin dashboard for managing products, orders, and customers.
+    keywords:
+      - React
+      - Material UI
+      - Firebase
